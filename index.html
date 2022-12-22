@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="style.css" />
+    <title>ChipsetNetWeb-video-text-chat-1</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>Chipset-Net-Web</h1>
+
+        <h2>Peer-chat text and video</h2>
+<!--p>ВНИМАНИЕ! ИНСТРУКЦИЯ! КАК ПОЛЬЗОВАТЬСЯ ЧАТОМ: Для входа в чат вам нужно создать комнату, придумать ей название, ввести любое свое имя и разрешить браузеру включить видеокамеру и микрофон.
+	        Для того, чтобы вошел в чат ваш собеседник, вам нужно сообщить ему ссылку на чат, имя комнаты, которое вы придумали, посоветовать ему ввести свое имя, и включить микрофон и видеокамеру.
+		</p-->
+
+
+    </header>
+
+
+    <div class="container">
+        <div class="remoteVideo">
+            <div class="header-title">My friend:)</div>
+            <video id="remoteVideo" height="50px" autoplay></video>
+        </div>
+        <div class="localVideo">
+            <div class="header-title">Local I am:)</div>
+            <video id="localVideo" autoplay muted></video>
+        </div>
+        <div class="notificationsBox">
+            <div class="header-title">Notifications</div>
+            <textarea readonly id="notificationsBox"></textarea>
+        </div>
+        <div class="chatBox">
+            <div class="header-title">Chat Box</div>
+            <textarea readonly id="chatBox"></textarea>
+            <input type="text" id="chat_text_input" placeholder="Send a message.." /><button id="sendMsgBtn" onclick="sendChatMessage()">Send</button>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
